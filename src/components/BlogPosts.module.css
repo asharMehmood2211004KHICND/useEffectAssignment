@@ -1,0 +1,21 @@
+ .posts {
+  width: 40rem;
+  margin: 2rem auto;
+
+  padding: 1rem;
+  list-style: none;
+  background-color:rgb(97, 55, 72);
+  border-radius: 90px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+} 
+
+
+/* .posts{
+  border: 1px solid red;
+} */
+
+.posts li {
+  margin: 1rem;
+  text-transform: capitalize;
+  color: black;
+}
