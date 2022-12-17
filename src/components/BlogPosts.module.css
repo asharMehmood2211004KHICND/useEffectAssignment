@@ -1,10 +1,10 @@
  .posts {
   width: 40rem;
   margin: 2rem auto;
-
+  /* background-color: aqua; */
   padding: 1rem;
   list-style: none;
-  background-color:rgb(97, 55, 72);
+  /* background-color:rgb(255, 11, 109); */
   border-radius: 90px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 } 
@@ -18,4 +18,5 @@
   margin: 1rem;
   text-transform: capitalize;
   color: black;
+  
 }

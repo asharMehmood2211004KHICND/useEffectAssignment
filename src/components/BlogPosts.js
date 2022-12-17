@@ -21,12 +21,14 @@ function BlogPosts() {
 
   return (
     
-  <ul classes={classes.posts}  >
+  <ul 
+  
+  classes={classes.posts}  >
                 {/* {console.log(posts)} */}
   {
-      posts.map(
+      posts.map( 
           post => (
-              <li  >
+              <li >
                       <p>{post.title}</p>
               </li>
           )
