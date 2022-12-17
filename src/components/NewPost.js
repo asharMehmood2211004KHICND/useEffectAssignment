@@ -6,6 +6,10 @@ function NewPost() {
   
   const [submitButton, setsubmitButton] = useState('Save')
 
+  const [posted, setposted] = useState('');
+
+  const [buttonStatus,setbuttonStatus] = useState(false);
+
   function updateTitleHandler(event) {
     setEnteredTitle(event.target.value);
   }
@@ -20,6 +24,8 @@ function NewPost() {
 
     setsubmitButton('Saving...')
 
+    
+
     const myPost = {
       "userId": 5,
       "id": 6,
@@ -33,6 +39,8 @@ function NewPost() {
       body:JSON.stringify(myPost)
     }).then(()=>{
       setsubmitButton('Save')
+      setposted('Posted');
+      setbuttonStatus(true)
       console.log('new post added')
   });
 
@@ -44,9 +52,11 @@ function NewPost() {
         <label>Title</label>
         <input type="text" onChange={updateTitleHandler} value={enteredTitle} />
       </div>
-      <button onClick={submitHandler} >{submitButton}</button>
+      <button disabled={buttonStatus} onClick={submitHandler} >{submitButton}</button>
+      <p>{posted}</p>
     </form>
   );
 }
 
-export default NewPost;
+export default NewPost; 
+  
